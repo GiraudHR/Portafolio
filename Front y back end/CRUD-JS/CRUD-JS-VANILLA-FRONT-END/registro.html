@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulario</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<style type="text/css">
+		.borde{border:1px #000 solid; text-align: center; height: 50px;}
+		.color1{background: #eeeeee;}
+		.color2{background: #fcc314;}
+		.color3{background: #94ac3c;}
+		.color4{background: #295ba7;}
+	</style>
+
+
+</head>
+<body>
+
+<h3 class="container-fliud text-uppercase text-center col-12 color1 py-3">Formulario de contacto</h3>
+<section class="container mt-5">
+	<form class="row">
+			<div class="col-md-6">
+				<div class="form-group">
+					<label for="">Nombre</label>	
+					<input type="text" name="Nombre" id="Nombre" placeholder="Escribe tu nombre aqui" class="form-control">
+				</div>
+				<div class="form-group">
+					<label for="">Apellido Materno</label>
+					<input type="text" name="Materno" id="Materno" placeholder="Escribe tu apellido aqui" class="form-control">
+				</div>
+				<div class="form-group">
+					<label for="">Apellido Paterno</label>
+					<input type="text" name="Paterno" id="Paterno" placeholder="Escribe tu apellido aqui" class="form-control">
+				</div>
+				<div class="form-group">
+					<label for="">Telefono</label>
+					<input type="" name="Telefono" id="Telefono" placeholder="Escribe tu apellido aqui" class="form-control">
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="form-group">
+					<label for="">Paciente</label>
+					<input type="text" name="Paciente" id="Paciente" placeholder="Escribe tu nombre aqui" class="form-control">
+				</div>
+				<div class="form-group">
+					<label for="">Turno</label>
+					<input type="text" name="Turno" id="Turno" placeholder="Escribe tu apellido aqui" class="form-control">
+				</div>
+				<div class="form-group">	
+					<label for="">Hospital</label>
+					<input type="text" name="Hospital" id="Hospital" placeholder="Escribe tu apellido aqui" class="form-control">
+				</div>
+				<div class="form-group">
+					<label for="">Medico</label>
+					<input type="" name="Medico" id="Medico" placeholder="Escribe tu apellido aqui" class="form-control">
+				</div>
+			</div>
+			<div class="col-12 text-center mt-3">
+				<div class="form-group">
+						<input type="button" value="Guardar" name="" class="btn btn-danger"    onclick="Post();">
+				</div>
+			</div>
+	</form>
+	<div id="divLista"></div>
+</section>
+
+
+
+
+<script type="text/javascript">
+	var url="http://localhost:62279/api/paciente";
+	Get();
+
+	function Post(){
+            fetch(url, {
+                method: "POST",
+                body: JSON.stringify({
+                    Nombre: document.getElementById("Nombre").value,
+                    Materno: document.getElementById("Materno").value}),
+                headers:{
+                    'Accept' : "application/json",
+                    "Content-Type":"application/json"
+                }
+            }).then(function(response){
+                if(response.ok){
+                    return response.text();
+                }else{
+                    alert("ERROR AL EJECUTAR SOLICITUD");
+                }
+            }).then(function(Data){
+                console.log(Data);
+                Get();
+                document.getElementById("Nombre").value="";
+                document.getElementById("Materno").value="";
+            })
+        }
+
+	function Get(){
+		fetch(url).then(function(response){
+			return response.json();
+		}).then(function(Data){
+			document.getElementById("divLista").innerHTML="";
+			for(i=0; i<Data.length; i++){
+				let divElement = document.createElement("div");
+				let divSpan = document.createElement("span");
+
+				divSpan.innerHTML = Data[i].nombre + " " + Data[i].materno;
+
+
+				divElement.appendChild(divSpan);
+				document.getElementById("divLista").appendChild(divElement);
+			}
+		})
+	}
+</script>
+
+
+</body>
+</html>

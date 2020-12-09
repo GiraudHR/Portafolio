@@ -1,0 +1,14 @@
+C:\Users\gerar\source\repos\CoreVanillaJS\CoreVanillaJS\bin\Debug\netcoreapp2.1\CoreVanillaJS.deps.json
+C:\Users\gerar\source\repos\CoreVanillaJS\CoreVanillaJS\bin\Debug\netcoreapp2.1\CoreVanillaJS.runtimeconfig.json
+C:\Users\gerar\source\repos\CoreVanillaJS\CoreVanillaJS\bin\Debug\netcoreapp2.1\CoreVanillaJS.runtimeconfig.dev.json
+C:\Users\gerar\source\repos\CoreVanillaJS\CoreVanillaJS\bin\Debug\netcoreapp2.1\CoreVanillaJS.dll
+C:\Users\gerar\source\repos\CoreVanillaJS\CoreVanillaJS\obj\Debug\netcoreapp2.1\CoreVanillaJS.csprojAssemblyReference.cache
+C:\Users\gerar\source\repos\CoreVanillaJS\CoreVanillaJS\obj\Debug\netcoreapp2.1\CoreVanillaJS.csproj.CoreCompileInputs.cache
+C:\Users\gerar\source\repos\CoreVanillaJS\CoreVanillaJS\obj\Debug\netcoreapp2.1\CoreVanillaJS.RazorAssemblyInfo.cache
+C:\Users\gerar\source\repos\CoreVanillaJS\CoreVanillaJS\obj\Debug\netcoreapp2.1\CoreVanillaJS.RazorAssemblyInfo.cs
+C:\Users\gerar\source\repos\CoreVanillaJS\CoreVanillaJS\obj\Debug\netcoreapp2.1\CoreVanillaJS.AssemblyInfoInputs.cache
+C:\Users\gerar\source\repos\CoreVanillaJS\CoreVanillaJS\obj\Debug\netcoreapp2.1\CoreVanillaJS.AssemblyInfo.cs
+C:\Users\gerar\source\repos\CoreVanillaJS\CoreVanillaJS\obj\Debug\netcoreapp2.1\CoreVanillaJS.RazorTargetAssemblyInfo.cache
+C:\Users\gerar\source\repos\CoreVanillaJS\CoreVanillaJS\bin\Debug\netcoreapp2.1\CoreVanillaJS.pdb
+C:\Users\gerar\source\repos\CoreVanillaJS\CoreVanillaJS\obj\Debug\netcoreapp2.1\CoreVanillaJS.dll
+C:\Users\gerar\source\repos\CoreVanillaJS\CoreVanillaJS\obj\Debug\netcoreapp2.1\CoreVanillaJS.pdb

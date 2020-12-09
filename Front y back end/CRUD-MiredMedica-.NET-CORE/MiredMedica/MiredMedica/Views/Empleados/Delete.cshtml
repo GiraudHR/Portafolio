@@ -1,0 +1,57 @@
+﻿@model MiredMedica.Models.Empleado
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Empleado</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Paterno)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Paterno)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Materno)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Materno)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Telefono)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Telefono)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Correo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Correo)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IdempresaNavigation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IdempresaNavigation.Nombre)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Idempleado" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

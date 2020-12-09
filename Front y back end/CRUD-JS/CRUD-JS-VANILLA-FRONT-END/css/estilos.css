@@ -1,0 +1,98 @@
+body{
+	background:#F2F2F2 0% 0% no-repeat padding-box;
+	opacity: 1;
+}
+
+header{
+	position: fixed;
+	background: white;
+	padding:  20px;
+	width: 100%;
+	height: 20px;
+}
+
+.left_area h3{
+	color: #8b0000;
+	margin: 0;
+	font-size: 22px;
+	font-weight: 700;
+}
+.left_area span{
+	color:;
+}
+
+.ingresar_btn{
+	padding: 5px;
+	color: #9b9b9b;
+	text-decoration: none;
+	float: right;
+	margin-top: -30px;
+	margin-right: 20px;
+	/*border-radius: 2px;*/
+	font-size: 15px;
+	font-weight: 600;
+	transition: 0.5s;
+	transition-property: color;
+}
+
+.ingresar_btn:hover{
+	color: #474b4e;
+}
+
+
+
+
+/*Agregados*/
+.icon{
+	margin-right: 10px;
+}
+
+
+.enca{
+	margin-top:10px;
+}
+.contimg{
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+.imagen{
+	font-size: 500%
+}
+
+
+.link1{
+	top: 701px;
+	left: 697px;
+	width: 527px;
+	height: 46px;
+	text-align: center;
+	font: normal normal medium 35px/42px Filson Soft;
+	letter-spacing: 3.5px;
+	color: #7A7A7A;
+	opacity: 0.63;
+}
+
+.link2{
+	top: 809px;
+	left: 849px;
+	width: 224px;
+	height: 27px;
+	text-align: center;
+	font: normal normal medium 30px/37px Filson Soft;
+	letter-spacing: 3px;
+	color: #616161;
+	opacity: 1;
+}
+
+.iconentrar{
+	font-size: 200%;
+}
+.boton{
+	border: none;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+
+/*Barra lateral*/
